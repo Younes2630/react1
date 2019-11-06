@@ -10,12 +10,12 @@ function Welcome(props){
     {name} phone: {phone}, isMember: {member}</p>;
 }
 
-Welcome.proptypes = {
+/*Welcome.proptypes = {
   name : Proptypes.String.isRequired,
   phone : Proptypes.String,
   isMember : Proptypes.bool
 
-}
+}*/
 
 Welcome.defaultProps = {
   isMember : false
@@ -29,10 +29,10 @@ function App() {
       <Welcome name ="John" phone ="2323" isMember = {false}/>
       <Welcome name = "OB"/>
       <Welcome name = "Sne"/>
-      <p>{upper(text1)}</p>
-      <p>console.log(text1)</p>
-      <p>console.log(text2)</p>
-      <p>console.log(text3)</p>  
+      <p>upper("please uppercase me"): {upper(text1)}</p>
+      <p>text1: (text1)</p>
+      <p>text2: (text2)</p>
+      <p>text3: (text3)</p>  
   </div>
   );
 }

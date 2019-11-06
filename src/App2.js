@@ -1,12 +1,13 @@
 import React from 'react';
+import person from "./file2"
 import upper, { males, females } from "./file2";
 import {names} from "./file2"
 
 const [firstName, lastName, gender, email] = person;
 
-const oneLiner = [firstName, email];
+const pers = [firstName, email];
 
-const personV2 = { 
+const personFull = { 
     email : person.email,
     firstName : person.firstName,
     lastName: person.lastName,
@@ -17,18 +18,23 @@ const personV2 = {
 };
 
 
-export default function App2(){
+function App(){
     return(
-        <div>
-        <p>console.log(oneLiner)</p>
-        <p>console.log(personV2)</p>
+        <div className= "App">
+        <p>FirstName : {firstName}, Email: {email}</p>
         </div>
 
-    )
-
-
+    );
 
 }
 
+const all = [...males, ...females];
+const everybody = [...males, "Kurt", "Helle", ...females, "Tina"];
+console.log(all);
+console.log(everybody);
 
-// export default App2;
+
+
+
+
+ export default App2;

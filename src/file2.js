@@ -1,4 +1,4 @@
-export default {
+export const person {
     firstName: "Kurt",
     lastName: "Wonnegut",
     gender : "Male",
@@ -8,11 +8,6 @@ export default {
     export const males = ["Peter","Jan"];
     export const females = ["Janne","Sarah"];
 
-
-    const all = [...males, ...females];
-    const everybody = [...males, "Kurt", "Helle", ...females, "Tina"];
-    console.log(all);
-    console.log(everybody);
 
     export const names = [
         {firstName:"Kurt",lastName:"Wonnegut",gender: "Male",email: "k@wonnegut.dk", phone: "12345"},

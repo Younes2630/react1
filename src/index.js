@@ -1,36 +1,17 @@
+// use this to render the component from different tasks by removing comment backslash from the import
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import App2 from './App2';
-import App3 from './App3;'
+//import App from './App';
+//import App from './App2';
+//import App from './App3';
+//import App from './tuesday1';
+//import App from './tuesday2';
+//import App from './tuesday3';
+//import App from './ListDemoApp';
+//import App from './ListDemoApp2';
 
-let app = <App/>
 
-const DontUseMeForReal = () => {
-    return (
-        <div className="App" onClick={handleSelect}>
-         <a href="/"  className="x" id="app1">ex1</a> &nbsp;
-         <a href="/"  className="x" id="app2">ex2</a> &nbsp;
-         {/* Add as many as you have exercises, but remember className="x" */}
-         {app}
-        </div>
-    )
-}
-
-function handleSelect(event) {
-    event.preventDefault();
-    if(event.target.className!=="x"){
-      return
-    }  
-    const id = event.target.id;
-    switch (id) {
-        case "app1": app = <App />; break;
-        case "app2": app = <App2 />; break;
-        case "app3": app = <App3 />; break;
-    }
-    ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
-}
-
-ReactDOM.render(<DontUseMeForReal />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
