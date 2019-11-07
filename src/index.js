@@ -11,7 +11,9 @@ import './index.css';
 //import App from './tuesday3';
 //import App from './ListDemoApp';
 //import App from './ListDemoApp2';
+//import FormDemo from './FormDemo';
+import ReservationForm from './FormDemoMultiple';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<ReservationForm />, document.getElementById('root'));
 
