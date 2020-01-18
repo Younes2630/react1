@@ -13,6 +13,7 @@ function Welcome(props) {
   const person = {
         firstName: names.firstName,
         lastName : names.lastName,
+        
         email : names.email    
 
   };
@@ -32,7 +33,7 @@ function Welcome(props) {
       email: PropTypes.objectOf(PropTypes.string.isRequired)
 }
   
-  function App() {
+  function App3() {
     return ({}
       <div>
         <Welcome name="Sara" />
@@ -47,4 +48,4 @@ function Welcome(props) {
 
   //{names.map(()=><WelcomePerson/>)}
   
-  export default App;
+  export default App3;

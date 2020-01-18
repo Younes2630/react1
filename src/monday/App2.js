@@ -18,7 +18,7 @@ const personFull = {
 };
 
 
-function App(){
+function App2(){
     return(
         <div className= "App">
         <p>FirstName : {firstName}, Email: {email}</p>
